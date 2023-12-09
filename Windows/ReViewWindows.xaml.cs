@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ToDoList;
 using ToDoList.Models;
+using Task = ToDoList.Models.Task;
 
 namespace ToDoList
 {
@@ -21,28 +23,39 @@ namespace ToDoList
     /// </summary>
     public partial class ReViewWindows : Window
     {
-        //List<Categories> categories = new List<Categories>();
-        public ReViewWindows()
+        public Task EditTask = null;
+        public ReViewWindows(Task editTask)
         {
             InitializeComponent();
 
+            EditTask = editTask;
+            this.DataContext = EditTask;
+
             YalanskyEntities categories = new YalanskyEntities();
+
             CBCategory.ItemsSource = categories.Categories.ToList();
 
+            CBCategory.SelectedItem = categories.Categories.FirstOrDefault(x => x.CategoryID == EditTask.CategoryID);
         }
 
         private void SaveReViewTask(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
-        }
+            if (CBCategory.SelectedItem != null)
+            {
+                EditTask.CategoryID = (CBCategory.SelectedItem as Categories).CategoryID;
 
-        public string ReViewTaskDescription
-        {
-            get { return new TextRange(TaskDescription.Document.ContentStart, TaskDescription.Document.ContentEnd).Text; }
-        }
-        public string SelwctCategory
-        {
-            get { return Convert.ToString(CBCategory.SelectedIndex); }
+                YalanskyEntities content = new YalanskyEntities();
+
+                content.Task.AddOrUpdate(EditTask);
+
+                content.SaveChanges();
+
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Вы не выбрали категорию");
+            }
         }
     }
 }

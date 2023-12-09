@@ -29,80 +29,63 @@ namespace ToDoList
         public MainWindow()
         {
             InitializeComponent();
+
             YalanskyEntities content = new YalanskyEntities();
+
             TaskLV.ItemsSource = content.Task.ToList();
         }
 
         private void AddNewTaks(object sender, RoutedEventArgs e)
         {
             AddnewTaskWindow addnewTaskWindow = new AddnewTaskWindow();
-            var result = addnewTaskWindow.ShowDialog();
             YalanskyEntities content = new YalanskyEntities();
 
-            try
-            {
-                if (result == true)
-                {
-                    content.Task.Add(new Task()
-                    {
-                        Title = addnewTaskWindow.NewTaskDescription,
-                        CategoryID = (Convert.ToInt32(addnewTaskWindow.SelwctCategory)) + 1
-                    });
-                    content.Task.ToList().Last();
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Вы не выбрали категорию");
-            }
-            content.SaveChanges();
-            TaskLV.ItemsSource = content.Task.ToList();
+            var result = addnewTaskWindow.ShowDialog();
+
+            GetSearch();
         }
 
 
         private void ReViewNewTaks(object sender, RoutedEventArgs e)
         {
-            YalanskyEntities content = new YalanskyEntities();
-
-            ReViewWindows reViewWindow = new ReViewWindows();
-            var result = reViewWindow.ShowDialog();
-            var item = TaskLV.SelectedItem as Task;
-
-            try
+            if (TaskLV.SelectedItem != null)
             {
-                if (result == true)
-                {
-                    item.CategoryID = Convert.ToInt32(reViewWindow.SelwctCategory) + 1;
-                    item.Title = reViewWindow.ReViewTaskDescription;
-                    content.Task.AddOrUpdate(item);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Вы не выбрали категорию");
-            }
+                YalanskyEntities content = new YalanskyEntities();
+                ReViewWindows reViewWindow = new ReViewWindows(TaskLV.SelectedItem as Task);
 
-            content.SaveChanges();
-            TaskLV.ItemsSource = content.Task.ToList();
+                reViewWindow.ShowDialog();
+
+                GetSearch();
+            }
         }
 
         private void DeleteTask(object sender, RoutedEventArgs e)
         {
-            var task = (sender as Button).DataContext as YalanskyEntities;
-
             YalanskyEntities content = new YalanskyEntities();
-            content.Task.Remove(content.Task.ToList().Last());
 
-            content.SaveChanges();
-            TaskLV.ItemsSource = content.Task.ToList();
+            var task = (sender as Button).DataContext as Task;
+            var deleteTask = content.Task.FirstOrDefault(x => x.ID == task.ID);
+
+            if (deleteTask != null)
+            {
+                content.Task.Remove(deleteTask);
+
+                content.SaveChanges();
+
+                GetSearch();
+            }
         }
 
 
         private void SearchText_TextChanged(object sender, TextChangedEventArgs e)
         {
+            GetSearch();
+        }
+
+        public void GetSearch()
+        {
             YalanskyEntities content = new YalanskyEntities();
             TaskLV.ItemsSource = content.Task.Where(x => x.ID.ToString().Contains(SearshText.Text)).ToList();
         }
-
     }
 }

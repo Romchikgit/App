@@ -15,3 +15,31 @@ C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.csproj.Genera
 C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.exe
 C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.pdb
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\ToDoList.exe.config
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\ToDoList.exe
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\ToDoList.pdb
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\EntityFramework.dll
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\EntityFramework.xml
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Release\ru\EntityFramework.resources.dll
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.csproj.AssemblyReference.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.csproj.SuggestedBindingRedirects.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\Windows\AddnewTaskWindow.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\MainWindow.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\Windows\ReViewWindows.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\App.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList_Content.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList_MarkupCompile.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList_MarkupCompile.lref
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\App.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\Windows\AddnewTaskWindow.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\MainWindow.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\Windows\ReViewWindows.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.g.resources
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.Properties.Resources.resources
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.csproj.GenerateResource.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.csproj.CopyComplete
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.exe
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Release\ToDoList.pdb

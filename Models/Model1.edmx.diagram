@@ -5,10 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="4aa20db5387a4e1a8711a245b14c8619" Name="Diagram1">
-        <EntityTypeShape EntityType="YalanskyModel.Categories" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="YalanskyModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="YalanskyModel.Task" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <AssociationConnector Association="YalanskyModel.FK_Task_Categories" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="YalanskyModel.Categories" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="YalanskyModel.Task" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="YalanskyModel.FK_Task_Categories" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

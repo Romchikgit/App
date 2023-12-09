@@ -10,21 +10,23 @@
     <StackPanel>
         <Label Foreground="White" Content="Список дел: " HorizontalAlignment="Center" FontSize="28"/>
 
-        <ListView x:Name="TaskLV" Margin="10" MaxHeight="320">
+        <ListView x:Name="TaskLV" Margin="10" Height="320">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Vertical" Width="400" Background="{Binding Categories.Colour}">
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Margin="0 10 0 0" FontSize="20" Text="{Binding ID, StringFormat=Задача №{0}}" Foreground="#FF020313" TextWrapping="Wrap"></TextBlock>
-                            <Image Margin="5 5 0 0" Source="{Binding Categories.ImageCategory}" Width="25" ></Image>
-                            <Button Margin="150 5 0 0" Width="32" Height="32" BorderThickness="0" Click="DeleteTask">
-                                <Button.Background>
-                                    <ImageBrush ImageSource="/Image/delete.png"></ImageBrush>
-                                </Button.Background>
-                            </Button>
+                    <Border Padding="10" BorderBrush="Black" BorderThickness="1" Width="400" Background="{Binding Categories.Colour}">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Margin="0 10 0 0" FontSize="20" Text="{Binding ID, StringFormat=Задача №{0}}" Foreground="#FF020313" TextWrapping="Wrap"></TextBlock>
+                                <Image Margin="5 5 0 0" Source="{Binding Categories.ImageCategory}" Width="25" ></Image>
+                                <Button Margin="150 5 0 0" Width="32" Height="32" BorderThickness="0" Click="DeleteTask">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="/Image/delete.png"></ImageBrush>
+                                    </Button.Background>
+                                </Button>
+                            </StackPanel>
+                            <TextBlock Margin="0 10 0 10" FontSize="20" Text="{Binding Title, StringFormat=Описание: {0}}" Foreground="#FF020313"></TextBlock>
                         </StackPanel>
-                        <TextBlock Margin="0 10 0 0" FontSize="20" Text="{Binding Title, StringFormat=Описание: {0}}" Foreground="#FF020313"></TextBlock>
-                    </StackPanel>
+                    </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

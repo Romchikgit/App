@@ -26,7 +26,6 @@ namespace ToDoList.Models
         }
     
         public virtual DbSet<Categories> Categories { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Task> Task { get; set; }
     }
 }

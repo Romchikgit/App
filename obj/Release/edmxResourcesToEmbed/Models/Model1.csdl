@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YalanskyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="YalanskyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="YalanskyModel.Categories" />
+    <EntitySet Name="Task" EntityType="YalanskyModel.Task" />
+    <AssociationSet Name="FK_Task_Categories" Association="YalanskyModel.FK_Task_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Task" EntitySet="Task" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImageCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Colour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Task" Relationship="YalanskyModel.FK_Task_Categories" FromRole="Categories" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryID" Type="Int32" />
+    <NavigationProperty Name="Categories" Relationship="YalanskyModel.FK_Task_Categories" FromRole="Task" ToRole="Categories" />
+  </EntityType>
+  <Association Name="FK_Task_Categories">
+    <End Type="YalanskyModel.Categories" Role="Categories" Multiplicity="0..1" />
+    <End Type="YalanskyModel.Task" Role="Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

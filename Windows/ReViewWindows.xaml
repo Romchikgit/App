@@ -11,6 +11,7 @@
         <Label Foreground="White" Content="Редактирование задачи" HorizontalAlignment="Center" FontSize="40"></Label>
 
         <TextBlock Foreground="White" Text="Категория: " HorizontalAlignment="Center" FontSize="25"></TextBlock>
+        
         <ComboBox Width="250" Height="30" FontSize="20" x:Name="CBCategory">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -23,7 +24,7 @@
         </ComboBox>
 
         <TextBlock Foreground="White" Text="Задачи: " FontSize="25" HorizontalAlignment="Center" Margin="0 15 0 0"></TextBlock>
-        <RichTextBox Width="350" Height="250" FontSize="20" x:Name="TaskDescription"></RichTextBox>
+        <TextBox Width="350" Height="250" FontSize="20" x:Name="TaskDescription" Text="{Binding Title}" TextWrapping="Wrap"></TextBox>
 
         <Button Content="Сохранить" IsDefault="True" Click="SaveReViewTask" Width="250" Margin="0 25 0 0"></Button>
         <Button Content="Отмена" IsCancel="True" Width="250" Margin="0 5 0 0" Background="DarkGray"></Button>

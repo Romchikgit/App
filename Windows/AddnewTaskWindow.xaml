@@ -23,7 +23,7 @@
         </ComboBox>
 
         <TextBlock Foreground="White" Text="Задачи: " FontSize="25" HorizontalAlignment="Center" Margin="0 15 0 0"></TextBlock>
-        <RichTextBox Width="350" Height="250" FontSize="20" x:Name="TaskDescription"></RichTextBox>
+        <TextBox Width="350" Height="250" FontSize="20" x:Name="TaskDescription" TextWrapping="Wrap"></TextBox>
 
         <Button Content="Сохранить" IsDefault="True" Click="SaveTask" Width="250" Margin="0 25 0 0"></Button>
         <Button Content="Отмена" IsCancel="True" Width="250" Margin="0 5 0 0" Background="DarkGray"></Button>

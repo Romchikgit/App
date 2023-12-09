@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using ToDoList;
 using ToDoList.Models;
+using Task = ToDoList.Models.Task;
 
 namespace ToDoList
 {
@@ -34,15 +35,24 @@ namespace ToDoList
 
         private void SaveTask(object sender, RoutedEventArgs e)
         {
-            this.DialogResult = true;
-        }
-        public string NewTaskDescription
-        {
-            get { return new TextRange(TaskDescription.Document.ContentStart, TaskDescription.Document.ContentEnd).Text;}
-        }
-        public string SelwctCategory
-        {
-            get { return Convert.ToString(CBCategory.SelectedIndex); }
+            YalanskyEntities content = new YalanskyEntities();
+
+            if(CBCategory.SelectedItem != null)
+            {
+                content.Task.Add(new Task()
+                {
+                    Title = TaskDescription.Text,
+                    CategoryID = (CBCategory.SelectedItem as Categories).CategoryID
+                });
+
+                content.SaveChanges();
+
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Вы не выбрали категорию");
+            }
         }
     }
 }

@@ -143,3 +143,31 @@ C:\Users\user\Desktop\Работы по WPF\Готовые работы по WPF
 C:\Users\user\Desktop\Работы по WPF\Готовые работы по WPF\ToDoList\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\user\Desktop\Работы по WPF\Готовые работы по WPF\ToDoList\bin\Debug\ru\EntityFramework.resources.dll
 C:\Users\user\Desktop\Работы по WPF\Готовые работы по WPF\ToDoList\obj\Debug\ToDoList.csproj.CopyComplete
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\ToDoList.exe.config
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\ToDoList.exe
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\ToDoList.pdb
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\EntityFramework.dll
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\EntityFramework.xml
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danii\Desktop\Новая папка (14)\App\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.csproj.AssemblyReference.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.csproj.SuggestedBindingRedirects.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\Windows\AddnewTaskWindow.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\MainWindow.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\Windows\ReViewWindows.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\App.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList_Content.g.cs
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList_MarkupCompile.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList_MarkupCompile.lref
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\App.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\Windows\AddnewTaskWindow.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\MainWindow.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\Windows\ReViewWindows.baml
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.g.resources
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.Properties.Resources.resources
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.csproj.GenerateResource.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.csproj.CopyComplete
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.exe
+C:\Users\danii\Desktop\Новая папка (14)\App\obj\Debug\ToDoList.pdb
