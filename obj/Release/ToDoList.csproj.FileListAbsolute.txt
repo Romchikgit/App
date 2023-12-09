@@ -1,0 +1,17 @@
+C:\Users\user\Desktop\Проекты\ToDoList\bin\Release\ToDoList.exe.config
+C:\Users\user\Desktop\Проекты\ToDoList\bin\Release\ToDoList.exe
+C:\Users\user\Desktop\Проекты\ToDoList\bin\Release\ToDoList.pdb
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\MainWindow.g.cs
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\App.g.cs
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList_MarkupCompile.cache
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList_MarkupCompile.lref
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\App.baml
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\MainWindow.baml
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.g.resources
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.Properties.Resources.resources
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.exe
+C:\Users\user\Desktop\Проекты\ToDoList\obj\Release\ToDoList.pdb
